@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stock Insight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">📊 Smart Stock Insight</div>
+            <div class="status">AI Connected 🟢</div>
+        </header>
+        
+        <div class="search-area">
+            <h1>Analisa Saham Cerdas</h1>
+            <p>Integrasi Data Pasar & Kecerdasan Buatan</p>
+            <div class="input-group">
+                <input type="text" id="code" placeholder="Kode Saham (cth: BBCA)">
+                <button onclick="analyze()">Analisa AI 🚀</button>
+            </div>
+        </div>
+
+        <div id="loading" class="hidden">🤖 Sedang menghubungi Teman AI...</div>
+
+        <div id="result" class="hidden result-grid">
+            <div class="card stock-card">
+                <h3>Data Fundamental</h3>
+                <h1 id="resCode">CODE</h1>
+                <p id="resName">Nama Perusahaan</p>
+                <hr>
+                <div class="row"><span>Harga:</span> <b id="resPrice">0</b></div>
+                <div class="row"><span>Market Cap:</span> <b id="resCap">0</b></div>
+                <div class="row"><span>Sektor:</span> <b id="resSector">-</b></div>
+            </div>
+            <div class="card ai-card">
+                <h3>Analisa AI Expert</h3>
+                <p id="resAI" class="ai-text">...</p>
+                <small>Powered by Partner AI Service</small>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
