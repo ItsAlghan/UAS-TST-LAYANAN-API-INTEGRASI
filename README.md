@@ -52,9 +52,9 @@ Berikut adalah endpoint utama yang tersedia:
 1. Analisa Saham (Integrasi AI)
 Mengambil data saham + rekomendasi AI.
 - Method: GET
-  URL: /api/stocks/{code}/analysis
-  Header: x-api-key: kuncirahasia123
-  Contoh: /api/stocks/BBCA/analysis
+- URL: /api/stocks/{code}/analysis\
+- Header: x-api-key: kuncirahasia123
+- Contoh: /api/stocks/BBCA/analysis
 
 2. Cari Saham
 Mencari saham berdasarkan kode atau nama.
