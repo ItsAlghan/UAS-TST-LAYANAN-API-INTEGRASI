@@ -1,3 +1,7 @@
+## HASIL
+<img width="1913" height="903" alt="image" src="https://github.com/user-attachments/assets/049bf146-71ff-4292-b371-8c687d6cd027" />
+
+
 # SMART STOCK INSIGHT
 
 **Smart Stock Insight** adalah platform analisis saham cerdas yang menggabungkan **Layanan Microservice Data Saham** dengan **Layanan AI Chatbot**.
