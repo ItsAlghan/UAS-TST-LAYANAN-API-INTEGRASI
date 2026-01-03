@@ -30,7 +30,7 @@ Ikuti langkah ini untuk menjalankan server di komputer Anda:
 
 ### 2. Instalasi
 Clone repository ini atau download folder source code.
-```bash
+
 # Masuk ke folder proyek
 cd TST_INTEGRASI_LAYANAN
 
@@ -40,9 +40,6 @@ npm install
 ### 3. Jalankan Server
 Perintah ini akan menyalakan server sekaligus membuat database stock.db dari file CSV.
 node src/app.js
-
-Jika berhasil, akan muncul pesan:
-Server running on port 3003 [SUKSES] Database Siap.
 
 ### 4. Akses Aplikasi
 Buka browser dan kunjungi:
@@ -71,6 +68,3 @@ URL: /api/auth/token
 Konfigurasi Kunci
 API Key Internal: Default adalah kuncirahasia123 (Bisa diubah di src/middlewares/auth.js).
 API Key Partner (AI): Hardcoded di src/controllers/stockController.js. Jika layanan AI teman mengganti kunci, update variabel FRIEND_API_KEY di file tersebut.
-
-Pembuat
-Nama: Alghan Pridanusuta NIM: 18223058
