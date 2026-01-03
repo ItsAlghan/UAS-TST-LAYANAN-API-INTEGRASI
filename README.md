@@ -35,9 +35,6 @@ Ikuti langkah ini untuk menjalankan server di komputer Anda:
 ### 2. Instalasi
 Clone repository ini atau download folder source code.
 
-# Masuk ke folder proyek
-cd TST_INTEGRASI_LAYANAN
-
 # Install dependency
 npm install
 
@@ -49,26 +46,26 @@ node src/app.js
 Buka browser dan kunjungi:
 Dashboard Web: http://localhost:3003
 
-📚 Dokumentasi API
+## Dokumentasi API
 Berikut adalah endpoint utama yang tersedia:
 
 1. Analisa Saham (Integrasi AI)
 Mengambil data saham + rekomendasi AI.
-Method: GET
-URL: /api/stocks/{code}/analysis
-Header: x-api-key: kuncirahasia123
-Contoh: /api/stocks/BBCA/analysis
+- Method: GET
+  URL: /api/stocks/{code}/analysis
+  Header: x-api-key: kuncirahasia123
+  Contoh: /api/stocks/BBCA/analysis
 
 2. Cari Saham
 Mencari saham berdasarkan kode atau nama.
-Method: GET
-URL: /api/stocks/search?q={keyword}
+- Method: GET
+- URL: /api/stocks/search?q={keyword}
 
 3. Cek Token
 Mendapatkan API Key untuk demo.
-Method: GET
-URL: /api/auth/token
+- Method: GET
+- URL: /api/auth/token
 
 Konfigurasi Kunci
-API Key Internal: Default adalah kuncirahasia123 (Bisa diubah di src/middlewares/auth.js).
-API Key Partner (AI): Hardcoded di src/controllers/stockController.js. Jika layanan AI teman mengganti kunci, update variabel FRIEND_API_KEY di file tersebut.
+- API Key Internal: Default adalah kuncirahasia123 (Bisa diubah di src/middlewares/auth.js).
+- API Key Partner (AI): Hardcoded di src/controllers/stockController.js. Jika layanan AI teman mengganti kunci, update variabel FRIEND_API_KEY di file tersebut.
